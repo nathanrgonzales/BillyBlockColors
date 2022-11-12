@@ -838,7 +838,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "SETAS <>  MOVIMENTAR O bILLY bLOCK\r\nw ATIRAR\r\nq E e TROCAR A COR DA
-    MUNI\xC7\xC3O\r\nspace  PULAR\r\nesc PAUSAR O JOGO "
+    MUNI\xC7\xC3O\r\nspace PULAR\r\nesc PAUSAR O JOGO "
 --- !u!222 &1358354854
 CanvasRenderer:
   m_ObjectHideFlags: 0
