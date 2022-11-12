@@ -1397,10 +1397,10 @@ MonoBehaviour:
   f_MaxSpeed: 8
   f_JumpForce: 80
   i_direction: 0
-  t_GroundCheck: {fileID: 0}
+  t_GroundCheck: {fileID: 1797400581}
   l_ItIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   a_Jump: {fileID: 8300000, guid: 390b0cbb8f71cfd44a909e8f24b0b84a, type: 3}
   b_IsGrounded: 0
 --- !u!58 &1141184459
