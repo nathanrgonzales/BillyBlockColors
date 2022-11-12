@@ -53,9 +53,13 @@ public class SCR_MenuController : MonoBehaviour
                         break;
                     case 1:
                         StartCoroutine(TimePreLoader());
+                        SceneManager.LoadScene("Controls");
+                        break;                        
+                    case 2:
+                        StartCoroutine(TimePreLoader());
                         SceneManager.LoadScene("Credits");
                         break;
-                    case 2:
+                    case 3:
                         StartCoroutine(TimePreLoader());                        
                         #if UNITY_EDITOR
                             UnityEditor.EditorApplication.isPlaying = false;
@@ -98,6 +102,17 @@ public class SCR_MenuController : MonoBehaviour
                 SceneManager.LoadScene("StartGame");
             }            
         }
+        else if(s_SceneName == "Controls")        
+        {
+            if(Input.GetButtonDown("Enter"))
+            {            
+                a_Audio.clip = a_EnterOption;
+                a_Audio.Play();                
+                Time.timeScale = 1f;
+                StartCoroutine(TimePreLoader());
+                SceneManager.LoadScene("StartGame");
+            }            
+        }        
         else if(s_SceneName == "Credits")
         {
             if(Input.GetButtonDown("Enter"))
