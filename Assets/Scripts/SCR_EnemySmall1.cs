@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SCR_EnemySmall1 : MonoBehaviour
 {
-    public int i_TypeEnemyMovement;
     public float f_Velocity = 1.5f;    
     public float f_MaxPosUp, f_MaxPosDown, f_MaxPosLeft, f_MaxPosRight;
     private Vector3 v_MaxPosUp, v_MaxPosDown, v_MaxPosLeft, v_MaxPosRight;
@@ -29,7 +28,7 @@ public class SCR_EnemySmall1 : MonoBehaviour
 
         if((f_MaxPosUp != 0f) && (f_MaxPosDown != 0f))
         {
-            this.BasicMovimentX();
+            this.BasicMovimentY();
         }
     }
 

@@ -68,13 +68,5 @@ public abstract class SCR_HPBaseController : MonoBehaviour
     } 
 
     public abstract void Death();
-
-    public void Respawn()
-    {
-        Debug.Log("Respawn");
-        i_HPCurrent = i_HPMax;
-        b_ReceiveDamage = true;
-        TakeDamage(0);
-    }
-
+    
 }

@@ -87,6 +87,14 @@ public class SCR_MenuController : MonoBehaviour
                 }
             }
         }
+        else if(s_SceneName == "Stage01")
+        {
+            a_Audio.clip = a_EnterOption;
+            a_Audio.Play();                
+            Time.timeScale = 1f;
+            StartCoroutine(TimePreLoader());
+            SceneManager.LoadScene("StartGame");
+        }        
     }
 
     IEnumerator TimePreLoader()

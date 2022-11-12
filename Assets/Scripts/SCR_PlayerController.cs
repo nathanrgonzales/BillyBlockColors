@@ -36,7 +36,7 @@ public class SCR_PlayerController : MonoBehaviour
             r_RigiBody2D.AddForce(Vector2.up * f_JumpForce, ForceMode2D.Impulse);
             b_IsGrounded = false;
         }
-
+        
         if(Input.GetButtonDown("ChangeL"))
         {
             i_TypeShoot--;
@@ -47,7 +47,18 @@ public class SCR_PlayerController : MonoBehaviour
         {
             i_TypeShoot++;
             i_TypeShoot = i_TypeShoot > 2 ? 0 : i_TypeShoot;
+        }        
+
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f ) // forward
+        {
+            i_TypeShoot++;
+            i_TypeShoot = i_TypeShoot > 2 ? 0 : i_TypeShoot;
         }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0f ) // backwards
+        {
+            i_TypeShoot--;
+            i_TypeShoot = i_TypeShoot < 0 ? 2 : i_TypeShoot;
+        }        
     }
 
     void FixedUpdate()

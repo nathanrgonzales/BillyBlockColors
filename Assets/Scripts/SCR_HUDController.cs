@@ -5,24 +5,12 @@ using UnityEngine;
 public class SCR_HUDController : MonoBehaviour
 {
     private SpriteRenderer s_Rendered;
-    
-    [SerializeField]
-    private UnityEngine.UI.Text t_HP;
-
-    [SerializeField]
+    public UnityEngine.UI.Text t_HP;
     public Sprite s_RedSprite;
-    
-    [SerializeField]
     public Sprite s_GreenSprite;
-    
-    [SerializeField]
     public Sprite s_BlueSprite;
-    
-    [SerializeField]
-    private SCR_PlayerController s_PlayerController;    
-
-    [SerializeField]
-    private SCR_HPPlayer s_HPPlayer;        
+    public SCR_PlayerController s_PlayerController;    
+    public SCR_HPPlayer s_HPPlayer;        
     
     void Start()
     {
