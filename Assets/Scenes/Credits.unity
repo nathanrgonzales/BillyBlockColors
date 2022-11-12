@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 145}
+  m_AnchoredPosition: {x: 0, y: 145}
   m_SizeDelta: {x: 311.44623, y: 116.09631}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &224071305
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04cc1202ea59ff84090b838220e34253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s_SceneName: StartGame
+  s_SceneName: Credits
   i_OptionSelected: 0
   a_SelectOption: {fileID: 8300000, guid: 26ab4ec06db96514ab8cefc860e92123, type: 3}
   a_EnterOption: {fileID: 8300000, guid: 484384130b389f347899ed361c4b55ad, type: 3}
@@ -837,12 +837,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Apresenta\xE7\xE3o:\r\nEste jogo foi desenvolvido por Nathan Rom\xE3o
-    Gonzales (RGM: 29087147), aluno do curso de P\xF3s Gradua\xE7\xE3o (P\xD3S-EAD)
-    de PROJETO E DESENVOLVIMENTO DE JOGOS DIGITAIS da Universidade CRUZEIRO DO SUL.\r\nO
-    objetivo deste jogo \xE9 ser entrega como atividade avaliativa para a disciplina
-    de PROJETO DE JOGOS 2D. N\xE3o tem fins comerciais.\r\n\r\nConte\xFAdo utilizado:
-    \r\r\nSprites\r > \n- https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-85838#reviews
+  m_Text: "Este jogo foi desenvolvido por Nathan Rom\xE3o Gonzales (RGM: 29087147),
+    aluno do curso de P\xF3s Gradua\xE7\xE3o (P\xD3S-EAD) de PROJETO E DESENVOLVIMENTO
+    DE JOGOS DIGITAIS da Universidade CRUZEIRO DO SUL. (12/11/2022)\r\nO objetivo
+    deste jogo \xE9 ser entrega como atividade avaliativa para a disciplina de PROJETO
+    DE JOGOS 2D. N\xE3o tem fins comerciais.\r\n\r\nConte\xFAdo utilizado: \r\r\nSprites\r
+    > \n- https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-85838#reviews
     (Bayat Games)\r\r\nAudios and Sound Effects\r>\n- https://opengameart.org/content/4-chiptunes-adventure
     (https://juhanijunkala.com/)\r\nhttps://opengameart.org/content/8-bit-platformer-sfx\r\n\r\n"
 --- !u!222 &1380735711

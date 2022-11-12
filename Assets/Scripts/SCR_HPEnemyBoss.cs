@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SCR_HPEnemyBasic : SCR_HPBaseController
+public class SCR_HPEnemyBoss : SCR_HPBaseController
 {
+    public SCR_BossAreaController s_BossArea;
     private int i_DefaultLayer;
     private void Start()
     {
@@ -13,6 +14,7 @@ public class SCR_HPEnemyBasic : SCR_HPBaseController
 
     public override void Death()
     {
+        s_BossArea.EndGame();
         Destroy(gameObject);
     }
 
@@ -25,4 +27,5 @@ public class SCR_HPEnemyBasic : SCR_HPBaseController
         else
             gameObject.layer = i_DefaultLayer;
     }    
+
 }

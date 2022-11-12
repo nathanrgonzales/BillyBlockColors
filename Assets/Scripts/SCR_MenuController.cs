@@ -87,13 +87,27 @@ public class SCR_MenuController : MonoBehaviour
                 }
             }
         }
-        else if(s_SceneName == "Stage01")
+        else if(s_SceneName == "EndGame")        
         {
-            a_Audio.clip = a_EnterOption;
-            a_Audio.Play();                
-            Time.timeScale = 1f;
-            StartCoroutine(TimePreLoader());
-            SceneManager.LoadScene("StartGame");
+            if(Input.GetButtonDown("Enter"))
+            {            
+                a_Audio.clip = a_EnterOption;
+                a_Audio.Play();                
+                Time.timeScale = 1f;
+                StartCoroutine(TimePreLoader());
+                SceneManager.LoadScene("StartGame");
+            }            
+        }
+        else if(s_SceneName == "Credits")
+        {
+            if(Input.GetButtonDown("Enter"))
+            {            
+                a_Audio.clip = a_EnterOption;
+                a_Audio.Play();                
+                Time.timeScale = 1f;
+                StartCoroutine(TimePreLoader());
+                SceneManager.LoadScene("StartGame");
+            }
         }        
     }
 

@@ -23,7 +23,7 @@ public class SCR_PlayerShooting : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if((Input.GetButtonDown("Fire1")) && (Time.timeScale > 0f))
         {
             Shoot();
         }        
