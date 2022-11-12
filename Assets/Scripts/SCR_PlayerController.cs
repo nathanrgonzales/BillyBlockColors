@@ -9,6 +9,9 @@ public class SCR_PlayerController : MonoBehaviour
     public float f_JumpForce = 100f;    
     public int i_direction;
     private int i_TypeShoot; /*0 = R; 1 = G; 2 = B*/
+    public Transform t_GroundCheck;
+    float f_GroundRadius = 0.2f;    
+    public LayerMask l_ItIsGround;
     private AudioSource a_Audio;
     public AudioClip a_Jump;
     public bool b_IsGrounded;
@@ -63,6 +66,8 @@ public class SCR_PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        b_IsGrounded = Physics2D.OverlapCircle(t_GroundCheck.position, f_GroundRadius, l_ItIsGround);
+
         r_RigiBody2D.AddForce(v_Direction * f_Speed, ForceMode2D.Impulse);
         GetDirection();
         if((Mathf.Abs(r_RigiBody2D.velocity.x) > 0.5f) && (v_Direction.x == 0f) && (b_IsGrounded))
@@ -124,15 +129,4 @@ public class SCR_PlayerController : MonoBehaviour
         transform.localScale = scale;
         GetDirection();
     }
-
-    void OnTriggerEnter2D(Collider2D other) 
-    {
-        b_IsGrounded = true;    
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        b_IsGrounded = false;
-    }
-    
 }
